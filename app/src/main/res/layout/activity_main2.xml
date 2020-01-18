@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_border"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="From"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/fromDate1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Enter General shift Date"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/imageFrom1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_event_note_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/grey_border"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="To"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/toDate1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="20/11/2019"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/imageTo1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_event_note_black_24dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:text="Check Rota"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/calendarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grey_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/prevMonthBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_arrow_left"/>
+
+
+            <TextView
+                android:id="@+id/monthOfYear"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:text="January"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/yearOfYear"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="2020"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:gravity="start"-->
+<!--                android:textSize="22sp"-->
+<!--                android:background="@color/colorPrimary"-->
+<!--                android:textColor="#fff"/>-->
+
+
+            <Spinner
+                android:id="@+id/yearSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:text="2020"
+                android:theme="@style/mySpinnerItemStyle"
+                android:layout_gravity="center_vertical"
+                android:gravity="start"
+                android:textSize="15sp"
+                android:background="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/nextMonthBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_arrow_right"/>
+
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:text="S"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:padding="3dip" />
+
+            <TextView
+                android:text="M"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:padding="3dip"  />
+
+            <TextView
+                android:text="T"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:padding="3dip" />
+
+            <TextView
+                android:text="W"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:padding="3dip"  />
+
+            <TextView
+                android:text="T"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:padding="3dip" />
+
+            <TextView
+                android:text="F"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:padding="3dip"  />
+
+            <TextView
+                android:text="S"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:padding="3dip" />
+
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+
+            />
+
+
+    </LinearLayout>
+
+    </LinearLayout>

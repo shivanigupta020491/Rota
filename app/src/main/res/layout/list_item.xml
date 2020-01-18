@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="50dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:background="@drawable/grey_border"
+    android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/dateRota"
+        android:text="1"
+        android:layout_width="50dp"
+        android:gravity="center"
+        android:textColor="#BF333333"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:padding="3dip"  />
+
+    <TextView
+        android:id="@+id/shiftNameRota"
+        android:text="M"
+        android:layout_width="50dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_height="40dp"
+        android:textSize="13sp"
+        android:padding="3dip" />
+
+</LinearLayout>
